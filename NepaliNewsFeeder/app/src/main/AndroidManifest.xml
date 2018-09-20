@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nepalinewsfeeder.sabinkharel.com.fragment">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splashscreenslogo"
+        android:label="@string/newsname"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="activities.MainActivity" />
+        <activity
+            android:name="activities.CategoryActivityNews"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity android:name="activities.ChannelWiseNews" />
+        <activity android:name="activities.WebViewOpener"></activity>
+    </application>
+
+</manifest>
