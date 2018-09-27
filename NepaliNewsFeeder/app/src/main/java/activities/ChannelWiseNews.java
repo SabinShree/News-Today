@@ -99,6 +99,24 @@ public class ChannelWiseNews extends AppCompatActivity implements GetNewsJsonDat
         if (name.equals("News.com.au")) {
             return "news-com-au";
         }
+        if (name.equals("Wired.de")) {
+            return "wired-de";
+        }
+
+        if (name.equals("Google News (India)")) {
+            return "google-news-in";
+        }
+        if (name.equals("Google News (Australia")) {
+            return "google-news-au";
+        }
+        if (name.equals("Google News (Canada)")) {
+            return "google-news-ca";
+        }
+        if (name.endsWith("Google News (UK)")) {
+            return "google-news-uk";
+        }
+
+
         String result = null;
 //        assert name != null;
         String finalResult;//        String t2 = "!@#$%^&*()-';,./?><+abdd";
